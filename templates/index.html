@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1>Simple Home Page</h1>
+<div>
+<p>
+    Name: {{ name }}
+</p>
+<p>
+    Country: {{ country }}
+</p>
+<p>
+{#            {%  for i in '12345' %}#}
+    {% for i in list %}
+    <h{{ i }}>Life is cool</h{{ i }}>
+    {% endfor %}
+</p>
+</div>
+{% endblock %}
